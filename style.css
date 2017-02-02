@@ -1,0 +1,144 @@
+:root {
+  supported-color-schemes: light dark;
+  color-scheme: light dark;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fade-in 0.4s;
+  font-family: system-ui, sans-serif;
+  font-size: calc(1em + 0.7vw);
+  line-height: 1.5;
+  max-width: 700px;
+  margin: auto;
+  padding: 2vh 3vw;
+}
+
+body > p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+body p small {
+  color: #666;
+  font-style: italic;
+}
+
+form {
+  display: none; /* show only via JS */
+}
+
+form > table {
+  margin: auto auto 1em auto;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+form > table col {
+  width: 50%;
+}
+
+form > table > thead {
+  border-bottom: 1px solid;
+}
+
+form table td,
+form table th {
+  padding: 0.3em 0.5em;
+}
+
+form > table > tbody tr:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+form > table > tbody tr:active,
+form > table > tbody tr.selected {
+  background-color: #e5e5e5;
+}
+
+form > table > tbody tr.reference-format {
+  outline: 1px dashed;
+}
+
+form > table > tbody tr td:first-child {
+  /*text-align: center;*/
+}
+
+form > table > tbody tr td:last-child {
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+input[type='range'] {
+  margin: 0;
+  width: 100%;
+}
+
+body > footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: smaller;
+  padding-top: 0.5em;
+  border-top: 1px solid;
+}
+
+@media (min-width: 701px) {
+  body {
+    font-size: 1.306em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ddd;
+    background-color: #222;
+  }
+
+  a {
+    color: #88f;
+  }
+  a:visited {
+    color: #aaf;
+  }
+
+  input[type='range'] {
+    background: transparent;
+  }
+
+  input[type='range']::-moz-range-track,
+  input[type='range']::-webkit-slider-runnable-track {
+    background: #ddd;
+  }
+
+  body > p > small {
+    color: #aaa;
+  }
+
+  form > table > tbody tr:hover {
+    background-color: #555;
+  }
+
+  form > table > tbody tr:active,
+  form > table > tbody tr.selected {
+    background-color: #444;
+  }
+}
+
+summary {
+  cursor: pointer;
+}
+
+/* making sure an h2 within the summary does not display the details arrow on a separate line */
+summary h2 {
+  display: inline;
+}

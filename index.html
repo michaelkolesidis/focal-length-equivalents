@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Focal Length Equivalents</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Focal Length Equivalents" />
+    <meta
+      name="Description"
+      property="og:description"
+      content="Find the 35mm/full-frame equivalent to a focal length in different sensor- or film-format."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://focal-length-equivalents.vercel.app"
+    />
+    <meta
+      property="og:image"
+      content="https://focal-length-equivalents.vercel.app/icon_512.png"
+    />
+
+    <meta name="theme-color" content="#FFFFFF" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon_16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon_32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon_96.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="./icon_192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="./icon_512.png" />
+    <link rel="apple-touch-icon" sizes="1024x1024" href="./icon_1024.png" />
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="icon_16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icon_32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="icon_96.png" />
+    <link
+      rel="icon apple-touch-icon"
+      type="image/png"
+      sizes="192x192"
+      href="icon_192.png"
+    />
+    <link
+      rel="icon apple-touch-icon"
+      type="image/png"
+      sizes="512x512"
+      href="icon_512.png"
+    />
+    <link
+      rel="icon apple-touch-icon"
+      type="image/png"
+      sizes="1024x1024"
+      href="icon_1024.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="icon_16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icon_32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="icon_96.png" />
+    <link
+      rel="icon apple-touch-icon"
+      type="image/png"
+      sizes="192x192"
+      href="icon_192.png"
+    />
+    <link
+      rel="icon apple-touch-icon"
+      type="image/png"
+      sizes="512x512"
+      href="icon_512.png"
+    />
+    <link
+      rel="icon apple-touch-icon"
+      type="image/png"
+      sizes="1024x1024"
+      href="icon_1024.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="stylesheet" href="style.css" />
+    <noscript><link rel="stylesheet" href="style_noscript.css" /></noscript>
+
+    <script src="imaging_format.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <template id="formatOutput">
+      <tr>
+        <td><label></label></td>
+        <td><output for="focal-length">--</output></td>
+      </tr>
+    </template>
+  </head>
+  <body>
+    <noscript>
+      <figure>
+        <table>
+          <colgroup>
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th scope="row">Micro 4/3</th>
+              <td>5 mm</td>
+              <td>8 mm</td>
+              <td>12 mm</td>
+              <td>15 mm</td>
+              <td>18 mm</td>
+              <td>26 mm</td>
+              <td>44 mm</td>
+              <td>52 mm</td>
+              <td>70 mm</td>
+              <td>104 mm</td>
+              <td>156 mm</td>
+              <td>260 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">APS-C</th>
+              <td>7 mm</td>
+              <td>11 mm</td>
+              <td>16 mm</td>
+              <td>19 mm</td>
+              <td>23 mm</td>
+              <td>33 mm</td>
+              <td>57 mm</td>
+              <td>67 mm</td>
+              <td>90 mm</td>
+              <td>133 mm</td>
+              <td>200 mm</td>
+              <td>333 mm</td>
+            </tr>
+            <tr class="full-frame">
+              <th scope="row">35mm</th>
+              <td>10 mm</td>
+              <td>16 mm</td>
+              <td>24 mm</td>
+              <td>28 mm</td>
+              <td>35 mm</td>
+              <td>50 mm</td>
+              <td>85 mm</td>
+              <td>100 mm</td>
+              <td>135 mm</td>
+              <td>200 mm</td>
+              <td>300 mm</td>
+              <td>500 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">Fuji GFX</th>
+              <td>13 mm</td>
+              <td>20 mm</td>
+              <td>30 mm</td>
+              <td>35 mm</td>
+              <td>44 mm</td>
+              <td>63 mm</td>
+              <td>108 mm</td>
+              <td>127 mm</td>
+              <td>171 mm</td>
+              <td>253 mm</td>
+              <td>380 mm</td>
+              <td>633 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">6x4.5</th>
+              <td>16 mm</td>
+              <td>26 mm</td>
+              <td>39 mm</td>
+              <td>45 mm</td>
+              <td>56 mm</td>
+              <td>81 mm</td>
+              <td>137 mm</td>
+              <td>161 mm</td>
+              <td>217 mm</td>
+              <td>322 mm</td>
+              <td>483 mm</td>
+              <td>805 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">6x6</th>
+              <td>18 mm</td>
+              <td>29 mm</td>
+              <td>44 mm</td>
+              <td>51 mm</td>
+              <td>64 mm</td>
+              <td>92 mm</td>
+              <td>155 mm</td>
+              <td>183 mm</td>
+              <td>247 mm</td>
+              <td>366 mm</td>
+              <td>548 mm</td>
+              <td>915 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">6x7</th>
+              <td>20 mm</td>
+              <td>32 mm</td>
+              <td>48 mm</td>
+              <td>56 mm</td>
+              <td>71 mm</td>
+              <td>101 mm</td>
+              <td>171 mm</td>
+              <td>202 mm</td>
+              <td>272 mm</td>
+              <td>404 mm</td>
+              <td>604 mm</td>
+              <td>1009 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">6x8</th>
+              <td>22 mm</td>
+              <td>35 mm</td>
+              <td>53 mm</td>
+              <td>62 mm</td>
+              <td>77 mm</td>
+              <td>110 mm</td>
+              <td>187 mm</td>
+              <td>220 mm</td>
+              <td>297 mm</td>
+              <td>440 mm</td>
+              <td>660 mm</td>
+              <td>1100 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">6x9</th>
+              <td>23 mm</td>
+              <td>37 mm</td>
+              <td>56 mm</td>
+              <td>65 mm</td>
+              <td>82 mm</td>
+              <td>117 mm</td>
+              <td>198 mm</td>
+              <td>233 mm</td>
+              <td>315 mm</td>
+              <td>467 mm</td>
+              <td>700 mm</td>
+              <td>1167 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">4x5</th>
+              <td>36 mm</td>
+              <td>57 mm</td>
+              <td>85 mm</td>
+              <td>99 mm</td>
+              <td>124 mm</td>
+              <td>177 mm</td>
+              <td>301 mm</td>
+              <td>354 mm</td>
+              <td>478 mm</td>
+              <td>708 mm</td>
+              <td>1061 mm</td>
+              <td>1769 mm</td>
+            </tr>
+            <tr>
+              <th scope="row">8x10</th>
+              <td>71 mm</td>
+              <td>113 mm</td>
+              <td>170 mm</td>
+              <td>198 mm</td>
+              <td>248 mm</td>
+              <td>354 mm</td>
+              <td>601 mm</td>
+              <td>707 mm</td>
+              <td>955 mm</td>
+              <td>1415 mm</td>
+              <td>2122 mm</td>
+              <td>3537 mm</td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
+    </noscript>
+
+    <form>
+      <table>
+        <colgroup>
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Format</th>
+            <th><abbr title="Focal Length">&fnof;</abbr></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <label for="focal-length">Focal length (&fnof;):</label>
+      <input
+        type="range"
+        id="focal-length"
+        min="0"
+        list="popular-focal-lengths"
+      />
+      <datalist id="popular-focal-lengths"> </datalist>
+    </form>
+
+    <h1>35mm Focal Length Equivalents</h1>
+    <p>
+      This web page helps you find the 35mm/full-frame equivalent to a focal
+      length in a different sensor- or film-format.
+    </p>
+
+    <p>
+      Like a lot of photographers, you might be familiar with focal lengths in
+      the 35mm/full-frame image format and what field of view that focal length
+      represents (24 mm = wide angle, 50 mm = “normal” etc.). Different formats,
+      however, require different focal length lenses to produce an equivalent
+      field of view.
+    </p>
+
+    <p>
+      With this site, you can look up and calculate these focal lengths and
+      their 35mm-equivalents.
+    </p>
+
+    <details>
+      <summary><h2>Calculation</h2></summary>
+      <p>
+        The equivalent focal lengths are calculated based on the
+        <em>diagonal</em> of each imaging format.
+      </p>
+
+      <p>
+        For example:<br />
+        35mm format diagonal ≈ 43.3 mm.<br />
+        APS-C format diagonal ≈ 28.8 mm<br /><br />
+
+        Diagonal ratio: 43.3 mm / 28.8 mm ≈ 1.5<br /><br />
+
+        <b>50 mm in APS-C ≈ 75 mm in 35mm/full-frame</b> format, because 50 mm *
+        1.5 = 75 mm.
+      </p>
+
+      <p>
+        <small
+          >Using a diagonal-based calculation (instead of width- or
+          height-based) is not ideal when the aspect ratios of the compared
+          formats vary (greatly), as is for example the case when comparing
+          full-frame with its 3:2 aspect ratio to, say, 6x6, which is a square
+          format. However, this still seems to be the most popular and useful
+          way to make this comparison.</small
+        >
+      </p>
+    </details>
+
+    <footer>
+      <p>
+        Made by
+        <a href="http://michaelkolesidis.com" rel="author external noopener"
+          >Michael Kolesidis</a
+        >. Got feedback?
+        <a href="mailto:michael.kolesidis@gmail.com">Write me an email!</a>
+      </p>
+    </footer>
+  </body>
+</html>

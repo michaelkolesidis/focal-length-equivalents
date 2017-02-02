@@ -1,0 +1,62 @@
+noscript figure {
+  overflow-x: scroll;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+noscript table {
+  border-collapse: collapse;
+}
+
+noscript table td,
+noscript table th {
+  padding: 0.5em 0.7em;
+}
+
+noscript table tr th {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: white;
+  text-align: right;
+  white-space: nowrap;
+}
+
+noscript table tr td {
+  font-family: monospace;
+  text-align: right;
+}
+
+noscript table col:nth-of-type(even) {
+  background-color: #eee;
+}
+
+noscript table td {
+  white-space: nowrap;
+}
+
+noscript table tr.full-frame {
+  outline: 1px dashed black;
+}
+
+noscript table tr:hover {
+  background-color: rgba(238, 238, 238, 0.4);
+}
+
+noscript table col:hover {
+  font-size: 2em;
+}
+
+@media (prefers-color-scheme: dark) {
+  noscript table tr th {
+    background-color: #222;
+  }
+
+  noscript table col:nth-of-type(even) {
+    background-color: #111;
+  }
+
+  noscript table tr.full-frame {
+    outline-color: white;
+  }
+}
