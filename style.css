@@ -3,6 +3,14 @@
   color-scheme: light dark;
 }
 
+::-moz-selection {
+  background: #e7e7e7;
+}
+
+::selection {
+  background: #e7e7e7;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -10,6 +18,12 @@
   to {
     opacity: 1;
   }
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+  accent-color: #070707;
+  color: #070707;
 }
 
 body {
@@ -29,7 +43,7 @@ body > p {
 }
 
 body p small {
-  color: #666;
+  color: #797979;
   font-style: italic;
 }
 
@@ -70,10 +84,6 @@ form > table > tbody tr.reference-format {
   outline: 1px dashed;
 }
 
-form > table > tbody tr td:first-child {
-  /*text-align: center;*/
-}
-
 form > table > tbody tr td:last-child {
   font-family: monospace;
   white-space: nowrap;
@@ -94,7 +104,7 @@ body > footer {
 
 @media (min-width: 701px) {
   body {
-    font-size: 1.306em;
+    font-size: 1em;
   }
 }
 

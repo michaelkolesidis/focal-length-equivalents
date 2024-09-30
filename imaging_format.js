@@ -11,9 +11,7 @@ class ImagingFormat {
   }
 
   diagonalInMm() {
-    return Math.sqrt(
-      Math.pow(this.widthInMm, 2) + Math.pow(this.heightInMm, 2)
-    );
+    return Math.sqrt(this.widthInMm ** 2 + this.heightInMm ** 2);
   }
 
   normalFocalLength() {
@@ -21,19 +19,11 @@ class ImagingFormat {
   }
 
   equivalentToFocalLengthInFormat(otherFocalLength, otherFormat) {
-    // diagonal-based
     return otherFocalLength * this._diagonalRatioToFormat(otherFormat);
-
-    // width-based
-    // return otherFocalLength * this._longestSideRatioToFormat(otherFormat)
   }
 
   _longestSide() {
-    if (this.widthInMm > this.heightInMm) {
-      return this.widthInMm;
-    } else {
-      return this.heightInMm;
-    }
+    return Math.max(this.widthInMm, this.heightInMm);
   }
 
   _diagonalRatioToFormat(otherFormat) {
