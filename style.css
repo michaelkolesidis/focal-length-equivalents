@@ -24,6 +24,7 @@
   font-family: 'Outfit', sans-serif;
   accent-color: #070707;
   color: #070707;
+  /* user-select: none; */
 }
 
 body {
@@ -34,6 +35,10 @@ body {
   max-width: 700px;
   margin: auto;
   padding: 2vh 3vw;
+}
+
+h1 {
+  cursor: url('./smiley.png'), auto;
 }
 
 body > p {
